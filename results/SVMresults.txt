@@ -1,0 +1,25 @@
+Confusion Matrix:
+[[123   3]
+ [  8  66]]
+
+Accuracy: 0.945
+F1 Score: 0.9230769230769231
+Precision: 0.9565217391304348
+Recall: 0.8918918918918919
+Mcc: 0.8816614955451588
+
+F1 Score macro: 0.9401376833283448
+F1 Score micro: 0.945
+F1 Score weighted: 0.9454265190062856
+
+Precision macro: 0.9477265184201793
+Precision micro: 0.945
+Precision weighted: 0.9454397610355127
+
+Recall macro: 0.934041184041184
+Recall micro: 0.945
+Recall weighted: 0.945
+
+Runtime: 10.753561292018276
+
+Hyper param: {'C': 100, 'degree': 2, 'gamma': 'auto', 'kernel': 'rbf'}

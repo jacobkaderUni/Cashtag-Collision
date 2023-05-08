@@ -1,0 +1,25 @@
+Confusion Matrix:
+[[121   5]
+ [ 12  62]]
+
+Accuracy: 0.915
+F1 Score: 0.8794326241134752
+Precision: 0.9253731343283582
+Recall: 0.8378378378378378
+Mcc: 0.8164419502151501
+
+F1 Score macro: 0.9068977792382049
+F1 Score micro: 0.915
+F1 Score weighted: 0.9159612804293655
+
+Precision macro: 0.9175737852092919
+Precision micro: 0.915
+Precision weighted: 0.9155459544383346
+
+Recall macro: 0.8990776490776491
+Recall micro: 0.915
+Recall weighted: 0.915
+
+Runtime: 2.8044217500137165
+
+Hyper param: {'metric': 'manhattan', 'n_neighbors': 2, 'weights': 'distance'}
