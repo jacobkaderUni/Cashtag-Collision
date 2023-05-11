@@ -20,4 +20,4 @@ Recall macro: 0.9190261690261691
 Recall micro: 0.905
 Recall weighted: 0.905
 
-Runtime: 0.33928808401105925
+Runtime: 0.2332129169953987

@@ -20,6 +20,6 @@ Recall macro: 0.934041184041184
 Recall micro: 0.945
 Recall weighted: 0.945
 
-Runtime: 10.753561292018276
+Runtime: 9.74332541700278
 
 Hyper param: {'C': 100, 'degree': 2, 'gamma': 'auto', 'kernel': 'rbf'}

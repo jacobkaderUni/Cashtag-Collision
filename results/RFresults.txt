@@ -20,6 +20,6 @@ Recall macro: 0.9165594165594166
 Recall micro: 0.93
 Recall weighted: 0.93
 
-Runtime: 46.17966324998997
+Runtime: 69.87384895900323
 
 Hyper param: {'bootstrap': False, 'max_depth': 40, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 10}

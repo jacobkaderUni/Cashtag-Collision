@@ -14,7 +14,7 @@ class FeatureExtractor:
         vectorizer = CountVectorizer(min_df=self.minDF)
         vectorizer.fit(myArray)
         bow = vectorizer.transform(myArray).toarray()
-
+        # NLT K, to get rid of stop words
         # Save the feature labels to a file
         with open('results/feature_labels.txt', 'w', encoding='utf-8') as f:
             for label in vectorizer.get_feature_names_out():

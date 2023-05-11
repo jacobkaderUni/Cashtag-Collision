@@ -20,6 +20,6 @@ Recall macro: 0.8990776490776491
 Recall micro: 0.915
 Recall weighted: 0.915
 
-Runtime: 2.8044217500137165
+Runtime: 5.351825999998255
 
 Hyper param: {'metric': 'manhattan', 'n_neighbors': 2, 'weights': 'distance'}

@@ -2,6 +2,7 @@
 
 
 """ IMPORTS NEEDED """
+import matplotlib.ticker as mtick
 import os
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
@@ -96,7 +97,7 @@ def decision_trees(tuner, X_train, y_train, X_test, y_test):
 """ END """
 
 
-""" KEENS NEAREST NEIGHBORS """
+""" K NEAREST NEIGHBORS """
 def k_nearest_neighbhors(tuner, X_train, y_train, X_test, y_test):
     #
     # START TIME
@@ -160,6 +161,7 @@ def support_vector_classification(tuner, X_train, y_train, X_test, y_test):
     # START TIME
     svm_start_time = time.perf_counter()
     # Best hyper param
+    #
     best_paramsSVM = tuner.tune_svm()
     print("Best hyperparameters SVM: ", best_paramsSVM)
     # Instantiate the DecisionTreeModel class
@@ -227,6 +229,8 @@ def get_metric(filename, metric_name):
 def plot_metric(data_file, metric_name, output_file):
     # Extract the data from the file using the metric name
     data = [get_metric(data_file[i], metric_name) for i in range(len(data_file))]
+    # Convert the data to percentages
+    data = [i * 100 for i in data]
     print(data)
     # Create horizontal bar chart
     classifiers = ('NB', 'DT', 'KNN', 'RF', 'SVM', 'NN')
@@ -235,11 +239,15 @@ def plot_metric(data_file, metric_name, output_file):
     plt.yticks(y_pos, classifiers)
 
     plt.title(f"Classifier {metric_name}")
-    plt.xlabel(metric_name)
+    plt.xlabel(f"{metric_name} (%)")  # Indicate that x axis is in percentages
+    plt.ylabel("classifiers")
 
     # Add the values at the end of the bars
     for i, v in enumerate(data):
-        plt.text(v + 0.01, i - 0.1, str(round(v, 3)))
+        plt.text(v + 1, i - 0.1, f"{round(v, 1)}%")  # Display the values as percentages
+
+    # Format x-axis to display as percentage
+    plt.gca().xaxis.set_major_formatter(mtick.PercentFormatter())
 
     # Save the chart to a file
     plt.savefig(os.path.join('results', output_file))

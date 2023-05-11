@@ -20,6 +20,6 @@ Recall macro: 0.8827756327756328
 Recall micro: 0.905
 Recall weighted: 0.905
 
-Runtime: 75.36319862498203
+Runtime: 115.64289220800129
 
 Hyper param: {'criterion': 'gini', 'max_depth': 13, 'min_samples_leaf': 1, 'min_samples_split': 2}
