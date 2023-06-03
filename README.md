@@ -1,4 +1,4 @@
-# Cashtag Collision
+# Cashtag-Collision on the London Stock Exchange group
 
 Training different supervised classifiers to identify which tweets belong to the LSE.
 
@@ -6,13 +6,13 @@ Training different supervised classifiers to identify which tweets belong to the
 
 A Cashtag is a company ticker symbol preceded by the U.S. dollar sign, e.g. $TWTR. When you click on a cashtag, you’ll see other tweets mentioning that same ticket symbol.
 
-## What is Cashtag Collision?
+## What is Cashtag-Collision?
 
 One of the principal issues with including Cashtags in tweets is a phenomenon known as a 'Cashtag-Collision', which can occur when two different companies or entities share the same ticker symbol on Twitter, resulting in confusion among analysts and investor. This could also potentially affect stock prices. Investors must therefore be very careful when researching a ticker symbol.
 
 ## Application
 
-6 supervised classifiers will build and trained(fitted) using features which have carefully been extracted from the Tweets.JSON data set.
+6 supervised classifiers will be built and trained(fitted) using features which have carefully been extracted from the Tweets.JSON data set.
 
 - NAIVE BAYES
 - DECISION TREES (inc. hyperparam)
@@ -21,7 +21,7 @@ One of the principal issues with including Cashtags in tweets is a phenomenon kn
 - SUPPORT VECTOR MACHINE (inc. hyperparam)
 - NEURAL NETWORKS
 
-4 of the classifiers included hyperparameters to optmise their performance. The classifiers were trained on sveral features:
+4 of the classifiers included hyperparameters to optmise their performance. The classifiers were trained on several features:
 
 - BoW, tweet text converted into sparse vectors.
 - Crypto tweet, checking of the tweet is promoting a crypto currency.
@@ -82,3 +82,4 @@ Tensorflow
 $ pip install tensorflow
 
 (If you struglle to get tensor installed used Anaconda packet manager instead)
+
